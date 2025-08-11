@@ -1,0 +1,510 @@
+.main {
+    height: 100%;
+    width: 100vw;
+    background-color: #e6e6e687;
+    /* background-color: #fff; */
+    color: #000;
+}
+.nav{
+    position: fixed;
+    z-index: 999;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 3vw;
+    border-bottom: 1px solid rgba(187, 185, 185, 0.841);
+    background-color: #fff;
+}
+.header p {
+    font-size: 1vw;
+}
+.header img {
+    width: 1.2vw;
+    height: 1.2vw;
+    margin: 0 3vw;
+}
+.container {
+    margin-top: 8vw;
+    height: auto;
+    overflow-y: scroll;
+    padding-bottom: 3vw;
+}
+.col_name {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 96vw;
+    height: 2vw;
+    margin: 0 6vw;
+    margin-top: 3vw;
+}
+.col_name p {
+    font-size: 0.9vw;
+    color: #747373;
+}
+.data_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.history_data {
+    width: 92vw;
+    height: auto;
+    background-color: #fff;
+    margin: 0 4vw;
+    border: 2px solid rgba(180, 180, 180, 0.551);
+    border-radius: 15px;
+    padding-bottom: 1.5vw;
+}
+.main_date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2vw;
+    height: 2.3vw;
+    gap: 0.5vw;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.491);
+}
+.main_date img {
+    width: 1vw;
+    height: 1vw;
+}
+.main_date p {
+    font-size: 1vw;
+}
+.data_phone{
+    display: none;
+}
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 88vw;
+    margin: 0 2vw;
+    padding: 0.5vw 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.491);
+}
+.data p {
+    font-size: 0.8vw;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 14vw;
+    gap: 0.5vw;
+    /* background-color: #4AD0AD; */
+}
+.time img {
+    width: 1vw;
+    height: 1vw;
+}
+.booking_Id{
+    width: 10vw;
+    text-align: center;
+    /* background-color: darkmagenta; */
+}
+.workspace {
+    width: 11vw;
+    text-align: center;
+    /* background-color: palegreen;  */
+}
+.service {
+    width: 12vw;
+    text-align: center;
+    /* background-color: teal; */
+}
+.staff {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    width: 14vw;
+    /* background-color: brown; */
+}
+.staff img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.customer {
+    width: 16vw;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:10vw;
+    /* background-color: darkblue; */
+}
+.status button {
+    color: #4AD0AD;
+    padding: 0.5vw 0.8vw;
+    font-size: 0.7vw;
+    background-color: transparent;
+    border: 1px solid #ECEDEE;
+}
+.droplist select{
+    width:6vw;
+    max-height: 100%;
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 0.7vw;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 0.4vw;
+    -webkit-appearance: none;
+    appearance:unset;
+    cursor: pointer;
+    user-select: none;
+    border:0px;
+    border-radius: 5px;
+   outline:0px;
+   z-index: 99;
+   position: absolute;
+} 
+.droplist {
+    border: 1px solid #ECEDEE;
+    width: 6vw;
+    height: 1.8vw;
+    cursor: pointer;
+    position: relative;
+}
+.droplist img{
+    position: absolute;
+    width: 0.8vw;
+    height: 0.5vw;
+    right: 5%;
+    z-index: 9;
+    margin-top: 0.5vw ;
+    margin-left: 0.3vw;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    gap: 0.6vw;
+    width: 100vw;
+    min-height: 50px;
+    padding-left: 2vw;
+    border-top: 2px solid #ECEDEE;
+}
+.footer img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+@media (min-width:970px) and (max-width:1200px) {
+    .header {
+        height: 3vw;
+    }
+    .header p {
+        font-size: 1.5vw;
+    }
+    .container{
+        margin-top: 8.7vw;
+        padding-bottom: 20vw;
+    }
+    .col_name {
+        width: 96vw;
+        height: 3vw;
+        margin: 3vw 4vw 0 4vw;
+    }
+    .col_name p {
+        font-size: 1.3vw;
+    }
+    .history_data{
+        width: 96vw;
+        margin: 0 2vw;
+    }
+    .main_date{
+        height: 4vw;
+    }
+    .main_date p {
+        font-size: 1.5vw;
+    }
+    .data {
+        width: 92vw;
+        margin: 0 2vw;
+        padding: 1.5vw 0;
+    }
+    .data p {
+        font-size: 1.1vw;
+    }
+    .time{
+        width: 15vw;
+        padding-right: 0.1vw;
+    }
+    .booking_Id{
+        width: 8vw;
+    }
+    .workspace{
+        width: 16vw;
+    }
+    .customer{
+        width :16vw;
+    }
+    .status button{
+        font-size: 1vw;
+    }
+    .droplist{
+        width: 7.5vw;
+        height: 2vw;
+    }
+    .droplist img{
+        margin-top: 0.8vw;
+
+    }
+    .droplist select{
+        font-size: 1vw;
+    }
+}
+
+@media (min-width:600px) and (max-width:970px) {
+    .header {
+        position: unset;
+        padding: 1vw 0;
+        z-index: 999;
+    }
+
+    .header p {
+        padding: 2vw 0;
+        font-size: 1.7vw;
+    }
+
+    .header img {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin: 0 3vw;
+    }
+
+    .col_name {
+        width: 96vw;
+        height: 2vw;
+        margin: 0 3.1vw;
+    }
+
+    .col_name p {
+        font-size: 1.6vw;
+    }
+
+    .container {
+        margin-top: 1vw;
+        padding-bottom: 30vw;
+    }
+
+    .history_data {
+        width: 98vw;
+        height: auto;
+        margin: 0 1vw;
+    }
+
+    .main_date {
+        padding-left: 2vw;
+        height: 2.8vw;
+        gap: 0.5vw;
+    }
+
+    .main_date img {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .main_date p {
+        font-size: 1.3vw;
+    }
+
+    .data {
+        width: 94vw;
+        margin: 0 2vw;
+        padding: 0.5vw 0;
+    }
+
+    .data p {
+        font-size: 1.2vw;
+        padding: 1vw 0;
+    }
+
+    .time {
+        width: 15vw;
+    }
+
+    .booking_Id {
+        width: 11vw;
+    }
+
+    .workspace {
+        width: 12vw;
+    }
+
+    .service {
+        width: 13vw;
+    }
+
+    .staff {
+        width: 14vw;
+    }
+
+    .customer {
+        width: 20vw;
+    }
+
+    .status {
+        width: 10vw;
+    }
+    .status button {
+        padding: 0.6vw 0.9vw;
+        font-size: 0.9vw;
+    }
+    .droplist{
+        width: 7vw;
+        height: 2vw;
+    }
+    .droplist img{
+        width: 0.8vw;
+        height: 0.6vw;
+        right: 6%;
+        margin-top: 0.6vw;
+        margin-left: 0.3vw;
+    }
+    .droplist select{
+        width:6vw;
+        font-size: 0.9vw;
+        padding-left: 6%;
+        padding-top: 0.4vw;
+    } 
+    .footer{
+        position: unset;
+    }
+}
+@media (min-width:250px) and (max-width:600px) {
+    .header {
+        position: unset;
+        padding: 1vw 0;
+        height: 5vw;
+        z-index: 999;
+    }
+
+    .header p {
+        padding: 2vw 0;
+        font-size: 3.2vw;
+    }
+
+    .header img {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin: 0 3vw;
+    }
+
+    .col_name {
+       display: none;
+    }
+
+    .container {
+        margin-top: 1vw;
+    }
+
+    .history_data {
+        width: 96vw;
+        height: auto;
+        margin: 2vw 2vw;
+        border-radius: 5px;
+        border: 1px solid rgba(180, 180, 180, 0.551);  
+    }
+
+    .main_date {
+        padding-left: 2.5vw;
+        height: 7vw;
+        gap: 0.5vw;
+    }
+
+    .main_date img {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .main_date p {
+        font-size: 3vw;
+        padding: 2vw 1vw;
+    }
+
+    .data {
+        display: none;
+    }
+    .data_phone{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgba(180, 180, 180, 0.551);
+        padding-bottom: 1vw; 
+    }
+    .name p,.name_data p{
+        font-size: 2.8vw;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vw 0 1vw 2vw;
+        width: 25vw;
+        gap: 2vw;
+    }
+    .name_data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vw 0;
+        width: 44vw;
+        gap: 2vw;
+    }
+    .time{
+        width: 44vw;
+        justify-content: left;
+    }
+    .time img {
+        width: 2vw;
+        height: 2vw;
+    }
+    .staff{
+        width: 44vw;
+        justify-content: left;
+    }
+    .staff img{
+        width: 3vw;
+        height: 3vw;
+    }
+    .status{
+        width: 25vw;
+        height: 5vw;
+        margin-top: 1vw;
+        padding-left: 8vw;
+
+    }
+    .status button {
+        width: 18vw;
+        color: #4AD0AD;
+        padding: 0.5vw 0.8vw;
+        font-size: 2.3vw;
+        background-color: transparent;
+        border: 1px solid #ECEDEE;
+    }
+    .footer{
+        position: unset;
+        max-height: 5vw;
+    }
+    .footer img{
+        width: 3.4vw;
+        height: 3.4vw;
+    }
+}

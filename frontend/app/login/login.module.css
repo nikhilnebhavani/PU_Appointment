@@ -1,0 +1,388 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* mobile  */
+.h_screen{
+    width: 100vw;
+    height: 40vh;
+}
+.h_screen img{
+    width: 100vw;
+    height: 45vh;
+    object-fit: fill;
+    z-index: 98;
+    position: absolute;
+}
+.signin_sec{
+    height: 50vh;
+}
+.signintxt{
+    width: 100vw;
+    height: 60vh;
+    background: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+}
+.signintxt .logo{
+    width: 60vw;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.signintxt div{
+    width: 100vw;
+    padding-left: 10%;
+    margin-bottom: 6%;
+    margin-bottom: 10%;
+}
+.signintxt h2{
+    text-align: left;
+}
+.signintxt p{
+    margin-top: 2%;
+    text-align: left;
+}
+.signin_btn{
+    width: 80vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 0 !important;
+}
+.signin_btn img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+}
+.signin_btn p {
+    margin-top: 0;
+}
+
+.signup{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+.header img{
+    width: 30vw;
+    height: auto;
+}
+.signupinfo{
+    width: 50vw;
+}
+.signupinfo p{
+    color: rgba(128, 128, 128, 0.716);
+}
+.enterinfo{
+    width: 100vw;
+    height:auto;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.namenum{
+    width: 80vw;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+.namenum img{
+    width: 5vw;
+    height: 5vw;
+}
+.namenum input{
+    width: 60vw;
+    height: 30px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 3.1vw;
+}
+.dropdn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+.droplist {
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   border: 1px solid black;
+   width: 80vw;
+   height: 6vh;
+   margin-bottom: 5%;
+   border-radius: 10px;
+   cursor: pointer;
+   position: relative;
+}
+.droplist select{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    text-align: left;
+    padding-left: 10%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    user-select: none;
+    border:0px;
+    border-radius: 5px;
+   outline:0px;
+   z-index: 99;
+} 
+.droplist img{
+    position: absolute;
+    width: 10px;
+    height: auto;
+    right: 5%;
+    z-index: 9;
+}
+.btnnext button{
+    position: absolute;
+    background-color: #1d7fd6 !important;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 80vw;
+    height: 5vh;
+    border-color: #f2eeee;
+    border-style: solid;
+    margin-left: 10vw;
+    bottom: 5%;
+}
+
+/* tablets  */
+@media (min-width:700px) {
+    .h_screen{
+        height: 45vh;
+    }
+    .h_screen img{
+        height: 50vh;
+    }
+    .signintxt{
+        height: 50vh;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .signintxt .logo{
+        width: 40vw;
+    }
+    .signintxt h2{
+        font-size: 4vw;
+    }
+    .signintxt p{
+        font-size: 2.5vw;
+    }
+    .signin_btn img{
+        width: 50px;
+        height: 50px;
+    }
+    .header img{
+        width: 25vw;
+    }
+    .signupinfo h2{
+        font-size: 4vw;
+    }
+    .signupinfo p{
+        font-size: 2.5vw;
+    }
+    .namenum{
+        width: 60vw;
+        height: 5vh;
+    }
+    .namenum img{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .namenum input{
+        width: 50vw;
+        font-size: 2.5vw;
+    }
+    .dropdn{
+        align-items: flex-start;
+    }
+    .droplist {
+       width: 60vw;
+       height: 5vh;
+       margin-left: 10vw;
+    }
+    .droplist select{
+        font-size: 2.5vw;
+    } 
+}
+
+/* laptop  */
+@media (min-width:1000px) {
+    .flex{
+        display: flex;
+    }
+    .h_screen{
+        width: 50vw;
+        height: 100vh;
+    }
+    .h_screen img{
+        width: 55vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .signintxt{
+        width: 50vw;
+        height: 100vh;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .signintxt .logo{
+        width: 50vw;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    .signintxt div{
+        width: 50vw;
+    }
+    .signintxt h2{
+        font-size: 2.5vw;
+    }
+    .signintxt p{
+        font-size: 1.5vw;
+    }
+    .signin_btn{
+        cursor: pointer;
+        width: 40vw !important;
+    }
+    .signin_btn img{
+        width: 55px;
+        height: 55px;
+    }  
+    
+    .signup{
+        position: absolute;
+        width: 50vw;
+        z-index: 999;
+        background: white;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .header{
+        flex-direction: column;
+        padding-left: 5%;
+        width: 50vw;
+        height: 30vh;
+        padding-right: 5%;
+        align-items: center;
+    }
+    .header img{
+        width: 30vw;
+    }
+    .enterinfo{
+        margin-top: 5%;
+    }
+    .signupinfo{
+        margin-top: 5%;
+        width: 50vw;
+        text-align: left;
+        padding-left: 10vw;
+    }
+    .signupinfo h2{
+        font-size: 2vw;
+    }
+    .signupinfo p{
+        font-size: 1.5vw;
+    }
+    .namenum{
+        width: 30vw;
+        height: 45px;
+        margin-left: 10vw;
+        margin-bottom: 1.5%;
+    }
+    .namenum img{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    .namenum input{
+        width: 20vw;
+        font-size: 1.2vw;
+    }
+    .droplist {
+       width: 20vw;
+       height: 5vh;
+       margin-left: 10vw;
+       margin-bottom: 1.5%;
+    }
+    .droplist select{
+        font-size: 1.2vw;
+        padding-right: 10%;
+    } 
+    .btnnext button{
+        width: 30vw;
+        height: 6vh;
+        margin-left: 10vw;
+        font-size: 1.5vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1600px) {
+
+    .header img{
+        width: 15vw;
+    }
+
+    .signupinfo h2{
+        font-size: 1.5vw;
+    }
+    .signupinfo p{
+        font-size: 1.1vw;
+    }
+    .namenum{
+        width: 20vw;
+        height: 4.5vh;
+    }
+    .namenum input{
+        width: 15vw;
+        font-size: 1.1vw;
+    }
+    .droplist {
+       width: 15vw;
+       height: 4.5vh;
+    }
+    .droplist select{
+        font-size: 1.1vw;
+    } 
+    .btnnext button{
+        width: 25vw;
+        height: 4.5vh;
+        font-size: 1vw;
+    }
+
+}

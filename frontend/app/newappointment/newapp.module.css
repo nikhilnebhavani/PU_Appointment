@@ -1,0 +1,682 @@
+.main {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+
+.mcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 75vh;
+    background: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    transition-duration: 1s;
+}
+.mcontainer hr{
+    width: 100%;
+    height: 0.1vw;
+    background: #EFF2F5;
+}
+.container {
+    width: 45vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.date {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date p {
+    width: 20%;
+    font-size: 1.1vw;
+}
+.dt{
+    width: 50%;
+}
+.dt .DatePicker{
+    width: 150% !important;
+    height: 40px;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    border: none;
+    background: #EFF2F5;
+}
+
+.member {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.member p {
+    width: 20%;
+    font-size: 1.1vw;
+}
+.dn {
+    width: 50%;
+    height: 40px;
+    outline: none;
+}
+
+.time {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time p {
+    width: 20% !important;
+    font-size: 1.1vw;
+}
+.service {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service p {
+    width: 20%;
+    font-size: 1.1vw;
+}
+.service select{
+    background: #EFF2F5;
+    width: 50%;
+    height: 40px;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 0 2%;
+}
+.des {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.des p {
+    width: 20%;
+    font-size: 1.1vw;
+}
+.des textarea, .slot textarea {
+    width: 50%;
+    height: 100px;
+    border: none;
+    outline: none;
+    background: #EFF2F5;
+    font-size: 1vw;
+    padding: 2%;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 8px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.option{
+    margin:1vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.option button{
+    width: 200px;
+    height: 40px;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: #EFF2F5;
+    cursor: pointer;
+    transition-duration: .5s
+}
+.service_detail{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.service_detail p{
+    background: black;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+
+.slot{
+    width: 45vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.slot .box{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.slot label{
+    width: 30%;
+}
+.slot input{
+    width: 50%;
+    height: 40px;
+    font-size: 1vw;
+    padding: 2%;
+    background: #EFF2F5;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.slot select{
+    width: 50%;
+    font-size: 1vw;
+    padding: 2%;
+    cursor: pointer;
+    height: 40px;
+    background: #EFF2F5;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.timePickerContainer {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .timeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    padding: 2%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition-duration: .5s;
+    overflow-y: auto;
+    margin-left: 18%;
+    margin-top: -15%;
+}
+  
+  .timeSlot {
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EFF2F5;
+    cursor: pointer;
+    font-size: 1vw;
+  }
+  
+  .timeSlot:hover {
+    width: auto;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .selected {
+    background-color: black;
+    color: white;
+  }
+  
+  .selectedTimeDisplay {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF2F5;
+    border-radius: 8px;
+  }
+
+
+
+
+
+@media (min-width:600px) and (max-width:970px) {
+    .mcontainer {
+        width: 100vw;
+        /* height: 120vw */
+    }
+    .container {
+        width: 100vw;
+        height: 120vw;
+        margin-top: 2vw;
+        gap: 1vw;
+    }
+
+    .name,
+    .date,
+    .member,
+    .time,
+    .place,
+    .mode,
+    .service {
+        height: 5.5vw;
+    }
+
+    .ni {
+        width: 28vw;
+        height: 5vw;
+    }
+
+    .ni input {
+        width: 26.5vw;
+        height: 3.2vw;
+        font-size: 2vw;
+        margin: 0.5vw 0.2vw;
+    }
+
+    .dt {
+        width: 28vw;
+        height: 5vw;
+    }
+
+    .dt input {
+        width: 27.2vw;
+        height: 3.7vw;
+        font-size: 2vw;
+        margin: 0.5vw 0.8vw;
+        padding: 0;
+    }
+
+    .Datepicker {
+        width: 29vw;
+        height: 5vw;
+    }
+
+    .dn {
+        width: 28vw;
+        height: 5vw;
+    }
+
+    .dn select {
+        width: 29.5vw;
+        height: 4.8vw;
+        font-size: 1.8vw;
+    }
+
+    .dn img {
+        width: 2.1vw;
+        height: 1.3vw;
+        margin: 1.5vw 0vw;
+    }
+
+    .tdn {
+        width: 18vw;
+        height: 5vw;
+        
+    }
+
+    .tdn button{
+        font-size: 2vw;
+        margin: 1vw 0vw;
+
+    }
+    
+    .tdn img {
+        position: absolute;
+        width: 2.1vw;
+        height: 1.3vw;
+        right: 5%;
+        margin: 0.5vw 0vw;
+        cursor: pointer;
+    }
+
+    .toggle {
+        --width: 10vw;
+        --height: calc(var(--width) / 3);
+    }
+
+    .toggle .labels {
+        font-size: 1.5vw;
+        margin-top: 0.3vw;
+    }
+
+    .toggle input:checked+.slider::before {
+        transform: translateX(calc(var(--width)*0.65 - var(--height)*0.025));
+    }
+
+    .mi {
+        width: 28vw;
+        height: 5vw;
+    }
+
+    .mi input {
+        width: 27.5vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+        margin: 0.5vw 0.2vw;
+
+    }
+
+    .main p {
+        width: 35vw;
+        font-size: 2.3vw;
+    }
+
+    .drop {
+        width: 28vw;
+        height: 5vw;
+    }
+
+    .drop select {
+        width: 29.5vw !important;
+        height: 4.8vw;
+        font-size: 1.8vw;
+    }
+
+    .drop img {
+        width: 2.1vw;
+        height: 1.3vw;
+        margin: 1.5vw 0vw;
+    }
+
+    .des {
+        margin-top: 2.2vw;
+    }
+
+    .inbox {
+        width: 28vw;
+        height: 12vw;
+        margin-top: 9vw;
+    }
+
+    .inbox textarea {
+        width: 26.7vw;
+        height: 10.5vw;
+        font-size: 1.3vw;
+    }
+
+    .check {
+        gap: 1.2vw;
+        width: 100vw;
+        height: 7vw;
+        margin: 0vw 35vw;
+        margin-top: 7.7vw;
+    }
+
+    .check input[type="checkbox"] {
+        height: 1.7vw;
+        width: 1.7vw;
+    }
+
+    .check label {
+        width: 15vw;
+        height: 1.5vw;
+        font-size: 1.2vw;
+    }
+
+    .btn {
+        gap: 1.5vw;
+        margin-top: 1.2vw;
+        width: 50vw;
+        height: 6vw;
+        margin-left: 15vw;
+    }
+
+    .conbtn {
+        width: 37vw;
+        height: 6vw;
+        font-size: 3vw;
+        font-weight: 100;
+    }
+
+    .canbtn {
+        width: 37vw;
+        height: 6vw;
+        font-size: 3vw;
+        font-weight: 100;
+    }
+    .timepick{
+        display: none;
+    }
+    .timepickin {
+        display: block;
+        justify-content: left;
+        border: 1.2px solid #b1b1b1;
+        width: 70vw;
+        height: 34vw;
+        margin: 1vw 1vw;
+    }
+    
+    .bar {
+        width: 69.8vw;
+        height: 3.5vw;
+    }
+    
+    .bar img {
+        width: 1.1vw;
+        height: 1.4vw;
+        margin: 0.9vw;
+        cursor: pointer;
+    }
+    
+    .bar p {
+        width: 15.9vw !important;
+        height: 2.4vw;
+        color: white;
+        font-size: 1.6vw;
+        padding: 0.7vw 1vw;
+        margin: 0vw;
+        
+    }
+    
+    .seltime {
+        display: flex;
+        flex-direction: row;
+        height: 33.1vw;
+        padding-left: 2%;
+    }
+    
+    .morning {
+        width: 19vw;
+        height: 28.5vw;
+        margin: 0.5vw 0.9vw;
+
+    }
+    
+    .morning p {
+        width: 15vw !important;
+        height: 2.2vw;
+        font-size: 1.5vw;
+        padding: 0.1vw 0.4vw;
+    }
+    
+    
+    .line hr {
+        width: 18.8vw;
+        border: none;
+        height: 0.3vw;
+        margin-top: 0.12vw;
+        background-color: #EEEEEE;
+    }
+
+    .timeslot {
+        width: 18.8vw;
+        height: 25.2vw;
+        padding: 0vw 0.9vw;
+    }
+    
+    .timeslot button {
+        width: 7vw;
+        height: 2.5vw;
+        margin: 0.2vw 0.5vw;
+        border: 1px solid #1D7FD6;
+        background: none;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:200px) and (max-width:600px) {
+    .mcontainer {
+        position: fixed;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 10vh;
+    }
+    .option{
+        padding: 2%;
+    }
+    .option button{
+        width: 30%;
+        font-size: 3vw;
+    }
+    .container {
+        width: 100vw;
+        height: 70vh;
+        margin-top: 2vh;
+    }
+    .name,
+    .date,
+    .member,
+    .time,
+    .place,
+    .mode,
+    .service,
+    .des {
+        height: auto;
+    }
+    .service select{
+        width: 60%;
+        font-size: 16px;
+        color: black;
+    }
+    .service_detail{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        row-gap: 15%;
+        margin:  3% 0;
+    }
+    .service_detail p {
+        width: max-content !important;
+        font-size: 3vw !important;
+        padding: 5% 5%;
+    }
+    .dt {
+        width: 60%;
+        height: 40px;
+    }
+    .dt .DatePicker {
+        width: 115% !important;
+        height: 40px;
+        font-size: 16px;
+    }
+    .dn {
+        width: 60%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .dn select {
+        width: 47.2vw;
+        height: 40px;
+        font-size: 16px;
+    }
+    .timePickerContainer{
+        width: 60% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .selectedTimeDisplay{
+        width: 100% !important;
+    }
+    .selectedTimeDisplay h4{
+        font-size: 16px;
+    }
+    .timeGrid{
+        margin: 5% 0%;
+        height: 30vh;
+        width: 45%;
+        grid-template-columns: auto auto;
+    }
+    .timeSlot{
+        width: 100%;
+        font-size: 3vw;
+        color: black;
+    }
+    .selected{
+        color: white;
+    }
+
+    .des textarea{
+        width: 60%;
+        font-size: 16px;
+        overflow-y: auto;
+    }
+    .btn{
+        width: auto;
+        padding: 0 10%;
+        font-size: 3.5vw;
+    }
+   .main p {
+        width: 40%;
+        font-size: 4vw;
+    }
+    .slot{
+        width: 100vw !important;
+        margin: 2% 0;
+    }
+    .box{
+        width: 80%;
+    }
+    .box input{
+        width: 60%;
+        font-size: 16px;
+    }
+    .box select{
+        width: 60%;
+        font-size: 16px;
+        color: black;
+    }
+    .box textarea{
+        width: 60%;
+        font-size: 16px;
+    }
+}

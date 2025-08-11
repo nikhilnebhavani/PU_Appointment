@@ -1,0 +1,66 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: black;
+}
+.popup{
+    background-color: #fff;
+    border: 2px solid #ededed;
+    width: 15vw;
+    height: 5vw;
+    padding: 0.5vw 1vw;
+    padding-left: 0.2vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+}
+.fb button{
+    height: 1.8vw;
+    width: 10vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2vw;
+}
+.fb img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.fb p{
+    width: 3vw;
+    height: 1.7vw;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0.25vw 0.0vw;
+    margin-left: 1vw;
+
+}
+.sb button{
+    height: 1.8vw;
+    width: 14vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2vw;
+}
+.sb img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.sb p{
+    width: 6vw;
+    height: 1.6vw;
+    font-size: 0.8vw;
+    color: #D55F5A;
+    padding: 0.35vw 0vw;
+    margin-left: 1vw;
+}

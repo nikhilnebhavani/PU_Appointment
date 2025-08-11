@@ -1,0 +1,814 @@
+.main,.tabview{
+  width: 100vw;
+  height: 100%;
+  color: #000;
+}
+
+.userline{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 120px;
+  height: auto;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 1% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainsec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+/* .leftsec{
+  width: 50vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+} */
+.sch{
+  width: 85vw;
+  height: 70vh;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 3%;
+}
+.sch .buttons{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2% 0;
+}
+.sch .buttons button{
+  width: 15%;
+  height: 35px;
+  font-size: 1vw;
+  background: #EFF2F5;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .5s;
+  color: black;
+}
+.active_button{
+  background: black !important;
+  color: white !important;
+}
+
+.sch .buttons button img{
+  width: 28px;
+  height:28px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 5%;
+  padding: 5px;
+}
+.line2{
+  margin-top: 0.2vw;
+  height: 3px;
+  border-radius: 8px;
+  background: #F0F0F0;
+}
+.boxes{
+  width: 100%;
+  height: 82%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow-y: auto;
+  padding-bottom: 2%;
+  row-gap: 5%;
+  position: relative;
+  padding-top: 2%;
+}
+.freeSlots{
+  min-width: 45% !important;
+  height: auto;
+  max-height: 100px;
+  margin-top: 5%;
+  text-align: left;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFF2F5;
+  border: 0.2vw solid white;
+  box-shadow: 0.5px 0.5px 1px 1px rgba(129, 125, 125, 0.322);
+  border-radius: 8px;
+}
+.freeSlots img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5%;
+}
+.feedback{
+  position: absolute;
+  z-index: 999;
+  color: gray;
+  margin-top:15%;
+  margin-left: 48%;
+}
+.schedule{
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF2F5;
+  border: 0.2vw solid white;
+  box-shadow: 0.5px .5px 1px 1px rgba(129, 125, 125, 0.322);
+  border-radius: 8px;
+}
+.sch_up{
+  width: 95%;
+  margin: 1vw;
+  margin-bottom: 0vw;
+  color: #000;
+  display: flex;
+}
+.sch_up p{
+  display: flex;
+  align-items: center;
+  color: #000;
+  margin-bottom: 0.3vw;
+  font-weight: 350;
+}
+.sch_up p img{
+  width: 15px;
+  height: 15px;
+  margin-right: 3%;
+}
+.sch_up div{
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  gap: 0.2vw;
+
+}
+.dt_time{
+  align-items: end;
+  /* text-align: right; */
+  margin-bottom: 0.8vw;
+}
+.dt_time p{
+  width: 60%;
+  color: #000;
+  font-weight: 350;
+}
+.dt_time p img{
+  margin-right: 6%;
+}
+.sch_right{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  margin: 1vw;
+}
+.imp{
+  color: red !important;
+}
+.status{
+  color: #34A853 !important;
+}
+.resch{
+  color: #ff7300 !important;
+}
+.pending_but{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.cancelbtn{
+  width: 25%;
+  min-height: 25px;
+  max-height: 30px;
+  background-color: #f71f47;
+  color: white;
+  font-size: 0.7vw;
+  border: none;
+  padding: 0.4vw 0.8vw;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.rejectbtn{
+  width: 15%;
+  min-height: 25px;
+  max-height: 30px;
+  background-color: #f71f47;
+  color: white;
+  font-size: 0.7vw;
+  border: none;
+  padding: 0.4vw 0.8vw;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.approvebtn{
+  width: 15%;
+  min-height: 25px;
+  max-height: 30px;
+  background-color: #65B543;
+  color: white;
+  font-size: 0.7vw;
+  border: none;
+  padding: 0.4vw 0.8vw;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.reschedulebtn{
+  width: 25%;
+  min-height: 25px;
+  max-height: 30px;
+  background-color: #0496FF;
+  color: white;
+  border: none;
+  font-size: 0.7vw;
+  padding: 0.4vw 0.8vw;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pending_but .approvebtn, .pending_but .cancelbtn{
+  width: 50% !important;
+  margin-top: 0 !important;
+}
+.pending_but .reschedulebtn{
+  width: 80% !important;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.selectdate{
+  width: 80vw;
+  height: auto;
+  background-color: #EFF2F5;
+  border-radius: 12px;
+  border: 0.2vw solid white;
+  box-shadow: 0.5px 0.5px 2px 1px rgb(129, 125, 125);
+  margin-top: 2vw;
+  padding-bottom: 0.4vw;
+}
+.topdate{
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 1.2vw;
+}
+.date{
+  margin-top: 1.5vw;
+  margin-bottom: 1.2vw;
+}
+.meetshow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3vw 1vw 1.5vw 1vw;
+}
+.meetingnum{
+  align-items: center;
+  justify-content: center;
+  width: 4.9vw;
+  height: 4.9vw;
+  border-radius: 0.5vw;
+  margin-top: 0.6vw;
+  margin-bottom: 0.6vw;
+  border: 1px solid black;
+}
+.meetingdateselect p{
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 0.9vw;
+}
+.nonemeetingdateselect p{
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 0.9vw;
+}
+.meetingnum h2{
+  font-size: 2vw;
+  padding-top: 1.3vw;
+  text-align: center;
+  font-weight: 500;
+}
+.final_status{
+  margin-left: 10vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vw;
+}
+.finalbar{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin-top: 10%
+}
+.finalmeetnum{
+  background-color: #EFF2F5;
+  width: 6vw;
+  height: 6vw;
+  border: 0.2vw solid white;
+  box-shadow: 0.5px 0.5px 2px 1px rgb(129, 125, 125);
+  border-radius: 0.5vw;
+}
+.finalmeetnum h2{
+  font-size: 3vw;
+  padding-top: 1.1vw;
+  text-align: center;
+  font-weight: 500;
+}
+.finalnum p{
+  text-align: center;
+  margin-top: 0.7vw;
+  color: #000;
+  font-size: 1vw;
+}
+
+
+
+
+
+.DatePicker{
+  width: 200px !important;
+  height: 50px !important;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.tabview{
+  display: none;
+}
+
+.leftsec h2{
+  color: #000;
+  font-size: 1.8vw;
+}
+.line1{
+  margin-top: 0.2vw;
+  height: 3px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #1D7FD6 32%, #F0F0F0 32%);
+}
+
+.line3{
+  margin-top: 0.2vw;
+  height: 3px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #1D7FD6 36%, #F0F0F0 36%);
+}
+.line4{
+  margin-top: 0.2vw;
+  height: 3px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #1D7FD6 48%, #F0F0F0 48%);
+}
+.line5{
+  margin-top: 0.2vw;
+  height: 3px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #1D7FD6 56%, #F0F0F0 56%);
+}
+.rightsec{
+  flex:45%;
+  max-width: 50vw;
+  margin-left: 3vw;
+  margin-right: 6vw;
+  margin-top: 1vw;
+}
+.rightsec h2{
+  color: #000;
+  font-size: 1.8vw;
+}
+.rightsec hr{
+  border-style: 10px;
+  border-color: blue;
+}
+
+
+
+.schedulestyle{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.9vw;
+  gap: 0.5vw;
+  overflow-y: auto;
+  width: 34vw;
+  height: 29vw;
+  padding-left: 0.3vw;
+  padding-bottom: 0.3vw;
+  margin-bottom: 0.6vw;
+}
+
+
+@media (min-width:900px) and (max-width:1200px) {
+  .main{
+    width: 100vw;
+    height: 100%;
+  }
+  .logo img{
+    width: 26vw;
+    height: 6vw;
+    margin-top: 1.3vw;
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+  }
+  .navbar ul{
+    max-width: 40vw;
+    align-items: center;
+    gap: 2.2vw;
+    padding: 0.7vw 0;
+    margin-left: 4vw;
+  }
+  .selectdate{
+    width:48vw
+  }
+  .selectdate{
+    width:48vw
+  }
+  .leftsec{
+    flex:50%;
+    width: 50vw;
+    margin-left: 4vw;
+    margin-right: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+  }
+  .leftsec h2{
+    font-size: 3vw;
+  }
+  .line1{
+    background: linear-gradient(to right, #1D7FD6 53%, #F0F0F0 53%);
+  }
+  .line2{
+    background: linear-gradient(to right, #1D7FD6 54%, #F0F0F0 54%);
+  }
+  .line3{
+    background: linear-gradient(to right, #1D7FD6 59%, #F0F0F0 59%);
+  }
+  .line4{
+    background: linear-gradient(to right, #1D7FD6 68%, #F0F0F0 68%);
+  }
+  .line5{
+    background: linear-gradient(to right, #1D7FD6 79%, #F0F0F0 79%);
+  }
+  .rightsec{
+    flex:50%;
+    max-width: 50vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 1vw;
+  }
+  .rightsec h2{
+    font-size: 3vw;
+  }
+  .schedule{
+    width: 35vw;
+  }
+  .schedulestyle{
+    margin-top: 0.9vw;
+    width: 40vw;
+    gap: 0.5vw;
+  }
+  .meetingnum h2{
+  font-size: 2vw;
+  padding-top: 1.3vw;
+  text-align: center;
+  font-weight: 500;
+}
+  .dt_time{
+    gap: 0.8vw;
+    margin-bottom: 0.8vw;
+  }
+  .dt_time p,.dt_time li{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3vw;
+  }
+  .sch_left h2{
+    font-size: 1.8vw;
+  }
+  .sch_left h2{
+    font-size: 1.8vw;
+  }
+}
+
+@media (min-width:300px) and (max-width : 600px) {
+  .userline{
+    width: 100%;
+    margin-top: 5vw;
+    margin-left:0;
+    padding-top: 15vw;
+    height: auto;
+    flex-direction: column;
+    align-items: self-start;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.172);
+  }
+  .userline .user_name{
+    margin-bottom: 3%;
+    font-size: 5vw;
+    padding-left: 5%;
+  }
+  .userline .today_date{
+    margin-bottom: 3%;
+    font-size: 3.5vw;
+    padding-left: 5%;
+    color: gray;
+  }
+  .userline .user_meeting{
+    margin-bottom: 3%;
+    font-size: 8vw;
+    padding-left: 5%;
+  }
+  .mainsec{
+    height: auto;
+    padding-bottom: 10%;
+  }
+  .sch{
+    width: 100%;
+    height: 65vh;
+    margin-top: 10%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.172);
+  }
+  .buttons{
+    padding: 3% 1%;
+  }
+  .buttons button{
+    width: auto !important;
+    height: auto !important;
+    font-size: 3vw !important;
+    padding: 2% 3%;
+    outline: none;
+  }
+  .buttons button{
+    -webkit-tap-highlight-color: transparent;
+  }
+  .buttons img{
+    display: none;
+  }
+  .boxes{
+    grid-template-columns: 90%;
+  }
+  .freeSlots{
+    font-size: 3.5vw;
+  }
+  .freeSlots img{
+    width: 20px;
+    height: 20px;
+  }
+  .schedule{
+    font-size: 3vw;
+    padding:2%;
+  }
+  .schedule img{
+    width: 15px; 
+    height: 15px ; 
+  }
+  .sch_up p{
+    margin-bottom: 2.5%;
+    width: 100%;
+    font-size: 3vw;
+  }
+  .sch_up span{
+    display: inline-block;
+    max-width: 100%;
+    font-size: 3vw;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow:ellipsis;
+}
+  .dt_time p{
+    width: 65%;
+    margin-bottom: 2.5%;
+  }
+  .sch_right button{
+    width: auto;
+    height: auto;
+    font-size: 3vw;
+    padding: 1% 3%;
+  }
+  .sch_right{
+    margin-top: 5%;
+  }
+  .selectdate{
+    width: 100% !important;
+    height: auto;
+    padding: 6% 0;
+  }
+  .topdate p{
+    font-size: 3.5vw;
+  }
+  .meetshow{
+    padding: 0 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .meetingdateselect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meetingdateselect p{
+    font-size: 2.5vw;
+    margin-bottom: 20%;
+  }
+  .meetingnum{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .meetingnum h2{
+    font-size: 3.5vw;
+  }
+  .final_status{
+    width: 100%;
+    margin: 0;
+  }
+  .final_status h2{
+    font-size: 3.5vw;
+  }
+  .finalmeetnum{
+    width: 35px;
+    height: 35px;
+  }
+  .finalmeetnum h2{
+    font-size: 4.5vw ;
+  }
+  .finalnum p{
+    font-size: 3vw;
+    margin-top: 20%;
+  }
+  .finalnum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .finalbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .feedback{
+    font-size: 4vw;
+    margin: 0;
+    left:40%;
+    top:40%
+  }
+}
+
+@media (min-width:600px) and (max-width : 900px) {
+  .mainsec{
+    flex-direction: column;
+  }
+  .line1, .line2, .line3, .line4, .line5{
+    width: 90vw;
+    margin-top: 1%;
+  }
+  .leftsec{
+    width: 90vw;
+  }
+  .leftsec h2{
+    font-size:3vw;
+  }
+  .selectdate{
+    width: 90vw;
+    height: auto;
+    margin-top: 2vh;
+    padding-bottom: 2vw;
+  }
+  .topdate p{
+    font-size: 2.5vw;
+  }
+  .meetshow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .meetingdateselect{
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meetingnum{
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meetingdateselect p{
+    font-size: 1.8vw;
+  }
+  .finalbar{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .finalnum{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .finalmeetnum{
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .finalmeetnum h2{
+    font-size: 4vw;
+  }
+  .finalnum p{
+    font-size: 2vw;
+  }
+  .schedulestyle{
+    width: 90vw;
+    height: auto;
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-bottom: 5%;
+  }
+  .schedule{
+    width: 85vw;
+    height: auto;
+    min-height: 17vh;
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+  }
+  .sch_left{
+    max-width: 50vw;
+  }
+  .sch_left p{
+    font-size: 2.2vw;
+  }
+  .sch_left li {
+    font-size: 2.2vw;
+  }
+  .sch_right{
+    width: 30vw;
+  }
+  .sch_right button{
+    width: 90%;
+    height: 35px;
+    font-size: 2vw;
+    border-radius: 5px;
+  }
+  .sch_right li{
+    font-size: 2vw;
+    margin-left: 5vw;
+  }
+  .rightsec{
+    width: 90vw;
+    margin-left: 5vw;
+    padding-bottom: 5%;
+    height: auto;
+  }
+  .rightsec h2{
+    font-size: 3.5vw;
+  }
+
+  /* .padding{
+    width: 100vw;
+    height: 20vh;
+  } */
+ 
+
+}
+
+@media screen and (min-width: 1600px) {
+  .main{
+    margin-top: 200px;
+  }
+}
+
+

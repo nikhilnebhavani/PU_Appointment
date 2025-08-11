@@ -1,0 +1,48 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loader{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: grid;
+  background: white;
+  filter: blur(5px) contrast(20);
+}
+.loader::before,
+.loader::after{
+  content: "";
+  grid-area: 1/1;
+  width: 40px;
+  height: 40px;
+  background: black;
+  animation: animation 2s infinite;
+}
+.loader::after{
+  animation-delay: -1s;
+}
+@keyframes animation{
+  0%{
+    transform: translate(0,0);
+  }
+  25%{
+    transform: translate(100%, 0);
+  }
+  50%{
+    transform: translate(100%, 100%);
+  }
+  75%{
+    transform: translate(0, 100%);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}

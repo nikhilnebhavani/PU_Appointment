@@ -1,0 +1,338 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: black;
+}
+.popup{
+    background-color: #fff;
+    border: 2px solid #ededed;
+    width: 15vw;
+    height: 10vw;
+    padding: 0.5vw 1vw;
+    padding-left: 0.2vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+}
+.fb button{
+    height: 1.8vw;
+    width: 10vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2vw;
+}
+.fb img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.fb p{
+    width: 5.4vw;
+    height: 1.6vw;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0.35vw 0.0vw;
+}
+.sb button{
+    height: 1.8vw;
+    width: 14vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2vw;
+}
+.sb img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.sb p{
+    width: 9.5vw;
+    height: 1.6vw;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0.35vw 0vw;
+}
+.tb button{
+    height: 1.8vw;
+    width: 14vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2vw;
+}
+.tb img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.tb p{
+    width: 10.7vw;
+    height: 1.6vw;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0.35vw 0vw;
+}
+.fob button{
+    height: 1.8vw;
+    width: 10vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.2vw;
+}
+.fob img{
+    width: 1.7vw;
+    height: 1.7vw;
+    padding: 0.1vw;
+}
+.fob p{
+    width: 5.6vw;
+    height: 1.6vw;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0.35vw 0.0vw;
+}
+@media (min-width:800px) and (max-width:1200px) {
+    .popup{
+        width: 22vw;
+        height: 16vw;
+    }
+    .fb button{
+        height: 2.9vw;
+        width: 20vw;
+        margin: 0.4vw 0vw;
+    }
+    .fb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .fb p{
+        width: 8.4vw;
+        height: 2.4vw;
+        font-size: 1.3vw;
+        padding: 0.5vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+    .sb button{
+        height: 2.9vw;
+        width: 20vw;
+        margin: 0.4vw 0vw;
+    }
+    .sb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .sb p{
+        width: 15vw;
+        height: 2.4vw;
+        font-size: 1.3vw;
+        padding: 0.5vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .tb button{
+        height: 2.9vw;
+        width: 20vw;
+        margin: 0.4vw 0vw;
+    }
+    .tb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .tb p{
+        width: 18.4vw;
+        height: 2.4vw;
+        font-size: 1.3vw;
+        padding: 0.5vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .fob button{
+        height: 2.9vw;
+        width: 20vw;
+        margin: 0.4vw 0vw;
+    }
+    .fob img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .fob p{
+        width: 8.9vw;
+        height: 2.4vw;
+        font-size: 1.3vw;
+        padding: 0.5vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+    
+  }
+  @media (min-width:500px) and (max-width:800px){
+    .popup{
+        width: 25vw;
+        height: 17vw;
+    }
+    .fb button{
+        height: 3.1vw;
+        width: 15vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 0.5vw;
+    }
+    .fb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .fb p{
+        width: 9.1vw;
+        height: 3.9vw;
+        font-size: 1.4vw;
+        padding: 0.4vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+    .sb button{
+        height: 3.1vw;
+        width: 21vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 0.5vw;
+    }
+    .sb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .sb p{
+        width: 16.95vw;
+        height: 3vw;
+        font-size: 1.4vw;
+        padding: 0.5vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .tb button{
+        height: 3.1vw;
+        width: 23vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 0.5vw;
+    }
+    .tb img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .tb p{
+        width: 19.2vw;
+        height: 3vw;
+        font-size: 1.4vw;
+        padding: 0.5vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .fob button{
+        height: 3.1vw;
+        width: 15vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 0.5vw;
+    }
+    .fob img{
+        width: 2.8vw;
+        height: 2.8vw;
+        padding: 0.1vw;
+    }
+    .fob p{
+        width: 10vw;
+        height: 2.8vw;
+        font-size: 1.4vw;
+        padding: 0.4vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+  }
+  @media (min-width:200px) and (max-width:500px){
+    .popup{
+        width: 35vw;
+        height: 28vw;
+    }
+    .fb button{
+        height: 5.1vw;
+        width: 22vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 1vw;
+    }
+    .fb img{
+        width: 4.8vw;
+        height: 4.8vw;
+        padding: 0.1vw;
+    }
+    .fb p{
+        width: 13.1vw;
+        height: 4.9vw;
+        font-size: 1.9vw;
+        padding: 0.8vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+    .sb button{
+        height: 5.1vw;
+        width: 30vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 1vw;
+    }
+    .sb img{
+        width: 4.8vw;
+        height: 4.8vw;
+        padding: 0.1vw;
+    }
+    .sb p{
+        width: 23.5vw;
+        height: 4.9vw;
+        font-size: 1.9vw;
+        padding: 0.8vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .tb button{
+        height: 5.1vw;
+        width: 32vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 1vw;
+    }
+    .tb img{
+        width: 4.8vw;
+        height: 4.8vw;
+        padding: 0.1vw;
+    }
+    .tb p{
+        width: 26.2vw;
+        height: 4.9vw;
+        font-size: 1.9vw;
+        padding: 0.8vw 0vw;
+        margin-left: 0.2vw;
+    }
+    .fob button{
+        height: 5.1vw;
+        width: 30vw;
+        margin: 0.3vw 0vw;
+        margin-bottom: 0.5vw;
+    }
+    .fob img{
+        width: 4.8vw;
+        height: 4.8vw;
+        padding: 0.1vw;
+    }
+    .fob p{
+        width: 13.9vw;
+        height: 4.9vw;
+        font-size: 1.9vw;
+        padding: 0.8vw 0.0vw;
+        margin-left: 0.2vw;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/aboutus/page": "app/aboutus/page.js",
+  "/calendar/page": "app/calendar/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/newappointment/page": "app/newappointment/page.js",
+  "/login/page": "app/login/page.js",
+  "/waiting/page": "app/waiting/page.js",
+  "/mymeeting/page": "app/mymeeting/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/page": "app/page.js",
+  "/admin_use/page": "app/admin_use/page.js",
+  "/profile/page": "app/profile/page.js"
+}

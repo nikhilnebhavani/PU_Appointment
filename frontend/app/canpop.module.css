@@ -1,0 +1,837 @@
+.cancelpopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255 , 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: #fff;
+    border: 3px solid #ededed;
+    width: 50vw;
+    height: 35vw;
+    padding: 1vw 2vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+}
+.close {
+    height: 1.5vw;
+    width: 100%;
+}
+.close button {
+    background: transparent;
+    height: 1.5vw;
+    width: 1.5vw;
+    float: right;
+    border: transparent;
+    cursor: pointer;
+}
+
+.close img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.head {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.head h2 {
+    font-size: 1.3vw;
+}
+.head p {
+    font-size: 1vw;
+    color: #888888;
+}
+
+.detail {
+    width: 90%;
+    height: auto;
+    margin: 1.2vw 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nd {
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.nd p {
+    width: 15vw;
+    margin-bottom: 3%;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+.nd img{
+    width: 20px;
+    height: auto;
+    margin-right: 3%;
+}
+.dt {
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.dt p {
+    width: 60%;
+    margin-bottom: 3%;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+.dt img{
+    width: 20px;
+    height: auto;
+    margin-right: 3%;
+}
+
+
+
+
+
+
+
+.line {
+    margin: 0.8vw 2vw;
+
+}
+
+.line hr {
+    width: 42vw;
+    border: none;
+    height: 0.2vw;
+    background-color: #EEEEEE;
+}
+
+.res {
+    width: 44vw;
+    height: 12vw;
+    margin: 0vw 2vw;
+}
+.resD{
+    width: 44vw;
+    height: 12vw;
+    margin: 0vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.res p {
+    font-size: 1.3vw;
+    margin: 0vw;
+}
+
+.inbox {
+    width: 43.1vw;
+    height: 9.1vw;
+    margin: 0.5vw 0vw;
+    border: 1px solid #E1E1E1;
+    border-radius: 0.5vw;
+}
+
+.inbox textarea {
+    width: 42vw;
+    height: 8vw;
+    margin: 0.5vw;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+    letter-spacing: 1.1px;
+    resize: none;
+
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7vw;
+    width: 100vw;
+    height: 2vw;
+    margin: 0.3vw 2vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.check input[type="checkbox"] {
+    height: 1.7vw;
+    width: 1.7vw;
+    border: 1px solid #5B6572;
+    cursor: pointer;
+    border-radius: 0.2vw;
+}
+
+/* .check label {
+    width: 10vw;
+    height: 1vw;
+    font-size: 0.7vw;
+    color: red;
+    align-items: center;
+} */
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check p {
+    font-size: 0.9vw;
+}
+
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 2.5vw;
+    width: 45vw;
+    height: 5vw;
+}
+
+.conbtn {
+    width: 30%;
+    height: 35px;
+    color: #fff;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+}
+
+.canbtn {
+    width: 30%;
+    height: 35px;
+    color: #626262;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+}
+.DatePicker{
+    width: 200px !important;
+    height: 50px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2vw;
+  }
+
+@media (min-width:800px) and (max-width:1200px) {
+    .popup {
+        width: 50vw;
+        height: 37vw;
+        position: fixed;
+    }
+
+    .close {
+        height: 1.9vw;
+        width: 100%;
+    }
+
+    .close button {
+        height: 1.9vw;
+        width: 1.9vw;
+    }
+
+    .close img {
+        width: 1.8vw;
+        height: 1.8vw;
+    }
+
+    .head {
+        width: 100vw;
+        height: 2vw;
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.2vw;
+
+    }
+
+    .head h2 {
+        width: 15vw;
+        height: 1.9vw;
+        font-size: 1.4vw;
+    }
+
+    .head p {
+        width: 15vw;
+        height: 1.9vw;
+        font-size: 1.2vw;
+        color: #888888;
+        padding: 0.25vw 0.5vw;
+    }
+
+    .detail {
+        align-items: center;
+        justify-content: center;
+        width: 47vw;
+        height: 6vw;
+        margin: 0.4vw 0.8vw;
+    }
+
+    .detail img {
+        width: 3.8vw;
+        height: 3.8vw;
+        margin: 0.8vw 0.5vw;
+    }
+
+    .name p {
+        width: 16vw;
+        height: 1.7vw;
+        font-size: 1.3vw;
+    }
+
+    .dt {
+        width: 25vw;
+        height: 5vw;
+    }
+
+    .time p {
+        width: 10vw;
+        height: 1.8vw;
+        font-size: 1.3vw;
+    }
+
+    .t {
+        width: 5.5vw;
+        height: 1.8vw;
+    }
+
+    .t p {
+        width: 6vw;
+        height: 1.7vw;
+        font-size: 1.1vw;
+    }
+
+    .date {
+        height: 1.9vw;
+    }
+
+    .d {
+        width: 9.2vw;
+        height: 1.4vw;
+    }
+
+    .d img {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin: 0vw;
+    }
+
+    .d p {
+        font-size: 1.1vw;
+    }
+
+    .ti {
+        width: 14vw;
+        height: 1.4vw;
+    }
+
+    .ti img {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin: 0vw;
+    }
+
+    .ti p {
+        font-size: 1.1vw;
+    }
+
+    .line {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0vw;
+        margin-left: 1.2vw;
+    }
+
+    .line hr {
+        width: 43vw;
+        height: 0.2vw;
+    }
+
+    .res {
+        width: 44vw;
+        height: 12vw;
+        margin: 0vw 1vw;
+    }
+
+    .res p {
+        font-size: 1.4vw;
+    }
+
+    .inbox {
+        width: 43.1vw;
+        height: 9.1vw;
+    }
+
+    .inbox textarea {
+        width: 42vw;
+        height: 8vw;
+        margin: 0.5vw;
+        font-size: 1.4vw;
+    }
+
+    .check {
+        gap: 0.8vw;
+        width: 100vw;
+        height: 2vw;
+        margin: 0vw 1.3vw;
+    }
+
+    .check input[type="checkbox"] {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+
+    .check p {
+        font-size: 1vw;
+        justify-content: center;
+    }
+
+    .btn {
+        gap: 1vw;
+        width: 45vw;
+        height: 5vw;
+    }
+
+    .conbtn {
+        width: 9vw;
+        height: 4vw;
+        color: #fff;
+        font-size: 1.6vw;
+    }
+
+    .canbtn {
+        width: 9vw;
+        height: 4vw;
+        font-size: 1.6vw;
+    }
+
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    .popup {
+        width: 57vw;
+        height: 40vw;
+        position: fixed;
+    }
+
+    .close {
+        height: 2.3vw;
+        width: 100%;
+    }
+
+    .close button {
+        height: 2.3vw;
+        width: 2.3vw;
+    }
+
+    .close img {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    .head {
+        width: 100vw;
+        height: 2.1vw;
+    }
+
+    .head h2 {
+        width: 17vw;
+        height: 2vw;
+        font-size: 1.6vw;
+    }
+
+    .head p {
+        width: 15vw;
+        height: 1.9vw;
+        font-size: 1.3vw;
+    }
+
+    .detail {
+        width: 45vw;
+        height: 6vw;
+        margin: 0.4vw 0.8vw;
+    }
+
+    .detail img {
+        width: 3.8vw;
+        height: 3.8vw;
+        margin: 0.8vw 0.5vw;
+    }
+
+    .name p {
+        width: 16vw;
+        height: 1.7vw;
+        font-size: 1.3vw;
+    }
+
+    .dt {
+        width: 25vw;
+        height: 5vw;
+        margin-left: 1.5vw;
+    }
+
+    .time p {
+        width: 10vw;
+        height: 1.8vw;
+        font-size: 1.3vw;
+    }
+
+    .t {
+        width: 5.5vw;
+        height: 1.8vw;
+    }
+
+    .t p {
+        width: 6vw;
+        height: 1.7vw;
+        font-size: 1.1vw;
+    }
+
+    .date {
+        height: 1.9vw;
+    }
+
+    .d {
+        width: 9.2vw;
+        height: 1.4vw;
+    }
+
+    .d img {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin: 0vw;
+    }
+
+    .d p {
+        font-size: 1.1vw;
+    }
+
+    .ti {
+        width: 14vw;
+        height: 1.4vw;
+    }
+
+    .ti img {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin: 0vw;
+    }
+
+    .ti p {
+        font-size: 1.1vw;
+    }
+
+    .line {
+        align-items: center;
+        justify-content: center;
+        margin-top: 0vw;
+        margin-left: 1.2vw;
+    }
+
+    .line hr {
+        width: 43vw;
+        height: 0.2vw;
+    }
+
+    .res {
+        width: 44vw;
+        height: 12vw;
+        margin: 0vw 1vw;
+    }
+
+    .res p {
+        font-size: 1.4vw;
+    }
+
+    .inbox {
+        width: 43.1vw;
+        height: 9.1vw;
+    }
+
+    .inbox textarea {
+        width: 42vw;
+        height: 8vw;
+        margin: 0.5vw;
+        font-size: 1.4vw;
+    }
+
+    .check {
+        gap: 1vw;
+        width: 100vw;
+        height: 2vw;
+        margin: 0vw 1.3vw;
+    }
+
+    .check input[type="checkbox"] {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+
+    .check p {
+        font-size: 1vw;
+        justify-content: center;
+    }
+
+    .btn {
+        gap: 1vw;
+        width: 45vw;
+        height: 5vw;
+    }
+
+    .conbtn {
+        width: 9vw;
+        height: 4vw;
+        color: #fff;
+        font-size: 1.6vw;
+    }
+
+    .canbtn {
+        width: 9vw;
+        height: 4vw;
+        font-size: 1.6vw;
+    }
+}
+
+@media (min-width:200px) and (max-width:600px) {
+    .popup {
+        width: 90vw;
+        height: auto;
+        padding: 3% 2%;
+    }
+
+    .close {
+        height: auto;
+        width: 100%;
+    }
+
+    .close button {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    .close img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .head {
+        width: 70vw;
+        height: auto;
+    }
+
+    .head h2 {
+        width: auto;
+        height: 2.5vw;
+        font-size: 3vw;
+    }
+
+    .head p {
+        width: auto;
+        height: 2.2vw;
+        font-size: 2.5vw;
+    }
+
+    .detail {
+        width: 100%;
+        height: auto;
+        margin: 10% 0 5% 0;
+    }
+
+    .detail img {
+        width: 4.2vw;
+        height: 4.2vw;
+        margin: 0.8vw 0.5vw;
+    }
+
+    .nd {
+        width: 50%;
+        height: auto;
+    }
+
+    .nd p {
+        width: auto;
+        height: auto; 
+    }
+    .nd img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5%;
+    }
+    .nd span{
+        display: inline-block;
+        max-width: 100%;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow:ellipsis;
+    }
+
+    .dt {
+        width: 55%;
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .dt p {
+        width: 80%;
+        height: auto;
+        font-size: 16px;
+    }
+    .dt img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5%;
+    }
+
+    .line {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .line hr {
+        width: 100%;
+        height: 0.2vw;
+        margin: 0;
+    }
+    .resD{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .DatePicker{
+        width: 150px !important;
+        height: 30px !important;
+        font-size: 16px;
+        margin: 0 0 10% 0;
+        outline: none;
+    }
+    .res {
+        width: 100%;
+        height: auto;
+    }
+
+    .res p {
+        font-size: 16px;
+    }
+
+    .inbox {
+        width: 90%;
+        height: auto;
+    }
+
+    .inbox textarea {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+
+    .check {
+        gap: 1vw;
+        width: 100vw;
+        height: 4vw;
+        margin: 0vw 1.3vw;
+        
+    }
+
+    .check input[type="checkbox"] {
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .check p {
+        font-size: 1.5vw;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+        height: auto;
+        gap: 10%;
+    }
+
+    .conbtn {
+        width: 30%;
+        height: auto;
+        color: #fff;
+        padding: 2% 0;
+        font-size: 16px;
+    }
+
+    .canbtn {
+        width: 30%;
+        height: auto;
+        padding: 2% 0;
+        font-size: 16px;
+    }
+}
